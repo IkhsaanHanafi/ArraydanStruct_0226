@@ -4,33 +4,24 @@ using namespace std;
 int main() {
     // deklarasi dengan inisialisasi
     int aku[5] = {10,20,30,40,50};
-
     // deklarasi array tanpa inisialisasi
     int kamu[5];
-
     // tampilkan data (membaca data array)
     cout << "Data pada index 1 = " << aku[1] << endl;
-
     // ganti index ke 1 (menulis data array)
     aku[1] = 200;
     cout << endl;
     cout << "Data pada index 1 = " << aku[1] << endl;
-
     // Mengisi Satu per Satu
     cout << "Data index 0 = ";
     cin >> kamu[0];
-
     cout << "Data index 1 = ";
     cin >> kamu[1];
-
     cout << "Data index 2 = ";
-
     cout << "Data index 3 = ";
     cin >> kamu[3];
-
     cout << "Data index 4 = ";
     cin >> kamu[4];
-
     cout << endl;
 
      // Menampilkan Satu per Satu
@@ -39,6 +30,13 @@ int main() {
     cout << "Data Ketiga = " << kamu[2] << endl;
     cout << "Data Keempat = " << kamu[3] << endl;
     cout << "Data Kelima = " << kamu[4] << endl;
+    // Mengisi dengan menggunakan perulangan for
+for (int i = 0; i <= 4; i++)
+{
+    cout << "Data index ke-" << i << " = ";
+    cin >> kamu[i];
+}
 
-    return 0;
+cout << endl;
+
 }
