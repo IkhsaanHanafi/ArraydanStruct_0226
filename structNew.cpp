@@ -10,17 +10,20 @@ struct Orang
 
 int main() {
     Orang mhs;
-
     // Mengisi data
     cout << "Mengisi Data" << endl;
     cout << "Nama : ";
     cin >> mhs.nama;
-
     cout << "Alamat : ";
     cin >> mhs.alamat;
-
     cout << "Umur : ";
     cin >> mhs.umur;
+    cout << endl;
 
+    // menampilkan
+    cout << "Menampilkan Data" << endl;
+    cout << "Nama : " << mhs.nama << endl;
+    cout << "Alamat : " << mhs.alamat << endl;
+    cout << "Umur : " << mhs.umur << endl;
     return 0;
 }
